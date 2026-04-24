@@ -143,15 +143,6 @@ BIZSENSEAI/
 │   ├── schemas.py
 │ 
 │
-├── components/
-│   ├── loader.py        # Load documents
-│   ├── parser.py        # Parse PDF/DOCX/TXT
-│   ├── splitter.py      # Chunking logic
-│   ├── vectorstore.py   # ChromaDB creation
-│   ├── retriever.py     # Retrieval logic
-│   ├── model.py         # LLM setup (Groq)
-│   └── prompt.py        # Prompt engineering
-│
 ├── data/
 │   ├── 01_nexora_company_profile.txt
 │   ├── 02_nexora_leave_policy.txt
