@@ -43,20 +43,28 @@ Result:
 # 3. System Workflow
 
 ```text
-User Query
+Employee Query
    ↓
-Streamlit UI (app.py)
+Streamlit UI
    ↓
-Backend Logic (backend_logic.py)
+Session Memory Check
    ↓
-Retrieve Data From:
-   • ChromaDB (company knowledge)
-   • Uploaded documents
-   • Chat history (memory)
+Knowledge Source Selection
+   ├── Chat History
+   ├── Uploaded Documents
+   └── Base ChromaDB
    ↓
-LLM (Groq - LLaMA 3)
+Embedding + Similarity Search
    ↓
-Final Answer
+Relevant Context Retrieved
+   ↓
+Strict Prompt Creation
+   ↓
+Groq LLaMA 3
+   ↓
+Grounded Answer / "I don't know"
+   ↓
+Streamlit Chat Response
 ```
 
 ---
@@ -84,7 +92,7 @@ BIZSENSEAI/
 │   ├── main.py
 │   ├── models.py
 │   ├── schemas.py
-│   └── chroma_db/
+│ 
 │
 ├── components/
 │   ├── loader.py        # Load documents
@@ -104,7 +112,7 @@ BIZSENSEAI/
 │   └── 06_nexora_system_overview.txt
 │
 ├── app.py               # Streamlit UI
-├── backend_logic.py     # Core RAG logic
+├── chroma_db
 ├── create_db.py         # Build ChromaDB
 ├── requirements.txt
 └── .env
@@ -127,6 +135,10 @@ BIZSENSEAI/
 
 * Remembers user inputs
 * Handles follow-up questions
+
+## Observability
+* Uses LangSmith for end-to-end observability  
+* Helps in debugging, performance monitoring, and improving system accuracy  
 
 ## Multi-Source Retrieval
 
@@ -180,6 +192,7 @@ streamlit run app.py
 * Add secrets:
 
   * GROQ_API_KEY
+  * Lang_chain_API_key
 
 ---
 
@@ -199,12 +212,6 @@ streamlit run app.py
 * PDF export
 * Advanced ranking (reranker)
 
----
-
-# 13. Author
-
-Leela Krishna
-AI Engineer – Nexora Technologies
 
 ---
 
