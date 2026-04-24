@@ -161,7 +161,6 @@ BIZSENSEAI/
 
 ---
 
-# 8. Technologies Used
 
 # 8. Technologies Used
 
