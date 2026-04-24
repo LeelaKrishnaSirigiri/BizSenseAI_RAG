@@ -74,7 +74,8 @@ Streamlit Chat Response
 
 ## Architecture
 
-```text                ┌───────────────────────┐
+```text
+                ┌───────────────────────┐
                 │       User            │
                 │    (Employee)         │
                 └─────────┬─────────────┘
@@ -222,7 +223,6 @@ streamlit run app.py
 # 12. Future Improvements
 
 * Persistent user memory
-* Database integration
 * Multi-user support
 * PDF export
 * Advanced ranking (reranker)
@@ -238,11 +238,7 @@ BizSense AI is a secure and intelligent enterprise assistant that:
 * Provides accurate, context-driven answers
 * Reduces time spent searching internal data
 * Enhances organizational productivity
-
-It demonstrates how AI can be safely deployed in enterprise environments with controlled knowledge access.
 ---
-
-“From scattered data to smart answers.”
 
 ---
 
