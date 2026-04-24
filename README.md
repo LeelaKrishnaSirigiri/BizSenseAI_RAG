@@ -163,14 +163,18 @@ BIZSENSEAI/
 
 # 8. Technologies Used
 
-| Layer      | Technology         |
-| ---------- | ------------------ |
-| UI         | Streamlit          |
-| Backend    | Python             |
-| LLM        | Groq (LLaMA 3)     |
-| Embeddings | HuggingFace        |
-| Vector DB  | ChromaDB           |
-| Parsing    | PyPDF, python-docx |
+# 8. Technologies Used
+
+| Layer              | Technology                                  |
+|-------------------|----------------------------------------------|
+| UI (Frontend)     | Streamlit                                    |
+| Backend API       | FastAPI                                      |
+| Programming       | Python                                       |
+| LLM               | Groq (LLaMA 3)                               |
+| Embedding Model   | Sentence-Transformers (all-MiniLM-L6-v2)     |
+| Vector Database   | ChromaDB                                     |
+| File Processing   | PyPDF, python-docx                           |
+| Observability     | LangSmith                                    |
 
 ---
 
