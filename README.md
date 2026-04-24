@@ -160,34 +160,26 @@ BIZSENSEAI/
 
 ---
 
-# 6. Key Features
+## 6. Key Features
 
-## Knowledge-Based AI
+### Knowledge-Based Answering
+The system generates responses strictly from internal documents stored in ChromaDB and user-uploaded files, ensuring accurate and domain-specific answers.
 
-* Answers only from internal documents
+### Hallucination Control
+Implements strict prompt rules so the model does not use external knowledge and returns "I don't know" when the answer is not found in the available context.
 
-## Hallucination Control
-* Strict prompt engineering ensures no answer is generated outside the knowledge base
-  
-## Chat Memory
-* Remembers user inputs
-* Handles follow-up questions
+### Chat Memory
+Maintains conversation history to support follow-up questions and provide context-aware responses.
 
-## Observability
-* Uses LangSmith for end-to-end observability  
-* Helps in debugging, performance monitoring, and improving system accuracy  
+### Multi-Source Retrieval
+Retrieves relevant information from multiple sources, including chat history, uploaded documents, and the base knowledge database.
 
-## Multi-Source Retrieval
+### Observability
+Integrated with LangSmith to track prompts, responses, and system behavior, enabling debugging and performance monitoring.
 
-* Chat History
-* Uploaded Files
-* Base Knowledge DB
+### User-Friendly Features
+Supports file uploads (TXT, PDF, DOCX) and allows users to download chat conversations as a text file.
 
-## Download Chat
-
-* Export conversation as `.txt`
-
----
 
 # 7. Example Use Cases
 
