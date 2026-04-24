@@ -1,0 +1,6 @@
+Nexora Technologies Escalation Process
+
+- Step 1: Report to immediate manager
+- Step 2: If unresolved, escalate to department head
+- Step 3: Critical issues go directly to technical support
+- HR issues go directly to HR department

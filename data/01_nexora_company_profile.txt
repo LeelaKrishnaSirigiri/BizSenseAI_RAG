@@ -1,0 +1,86 @@
+Nexora Technologies - Company Profile
+
+Nexora Technologies is a fictional enterprise AI company focused on building intelligent document understanding systems.
+
+Vision:
+To enable organizations to unlock knowledge from internal data using AI.
+
+Mission:
+To build secure, scalable, and intelligent AI systems for enterprise knowledge management.
+
+--------------------------------------------------
+
+Leadership Team:
+
+Founder & CEO:
+- Arjun Mehta
+
+Co-Founder & CTO:
+- Kavya Reddy
+
+Chief Operating Officer (COO):
+- Rahul Sharma
+
+Chief Financial Officer (CFO):
+- Neha Kapoor
+
+--------------------------------------------------
+
+Department Heads / Managers:
+
+Engineering Department:
+- Head: Vikram Singh
+- Backend Team Lead: Rohan Patel
+- Frontend Team Lead: Sneha Iyer
+
+AI Research Department:
+- Head: Dr. Ananya Rao
+- Senior AI Engineer: Kiran Verma
+
+Human Resources Department:
+- Head of HR: Priya Nair
+- HR Manager: Anjali Desai
+- Talent Acquisition Lead: Meera Joshi
+
+Operations Department:
+- Operations Head: Suresh Kumar
+- Project Manager: Deepak Gupta
+
+--------------------------------------------------
+
+Company Overview:
+
+Employees: 120+
+
+Departments:
+1. Engineering
+2. Human Resources (HR)
+3. AI Research
+4. Operations
+
+--------------------------------------------------
+
+What we do:
+
+- AI-powered document intelligence systems
+- Enterprise RAG-based assistants
+- Workflow automation tools
+- Internal knowledge management platforms
+
+--------------------------------------------------
+
+Department Responsibilities:
+
+Engineering:
+Develops backend systems, APIs, and frontend applications.
+
+AI Research:
+Builds machine learning models, LLM integrations, and RAG pipelines.
+
+Human Resources:
+Handles hiring, onboarding, employee engagement, and policies.
+
+Operations:
+Manages daily workflows, project delivery, and coordination.
+
+--------------------------------------------------

@@ -1,0 +1,16 @@
+AI Knowledge System Overview
+
+This system uses Retrieval-Augmented Generation (RAG).
+
+Flow:
+- Documents are stored in ChromaDB
+- Documents are split into chunks
+- Embeddings are created
+- User queries retrieve relevant chunks
+- LLM generates final response
+
+Technology:
+- ChromaDB
+- HuggingFace Embeddings
+- Groq LLM
+- Streamlit UI

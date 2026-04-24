@@ -1,0 +1,39 @@
+# Core Backend
+fastapi
+uvicorn
+
+# Frontend
+streamlit
+
+# LangChain + RAG
+langchain
+langchain-community
+langchain-groq
+langchain-text-splitters
+
+# Vector DB
+chromadb
+sentence-transformers
+
+# LLM Observability
+langsmith
+
+# Database (PostgreSQL)
+sqlalchemy
+psycopg2-binary
+
+# Auth (password hashing)
+passlib[bcrypt]
+
+# File Handling
+pypdf
+python-docx
+
+# Environment Variables
+python-dotenv
+
+# Optional (advanced routing)
+langgraph
+
+# HTTP Requests (frontend → backend)
+requests
