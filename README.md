@@ -192,7 +192,7 @@ streamlit run app.py
 * Add secrets:
 
   * GROQ_API_KEY
-  * Lang_chain_API_key
+  * LANG_CHAIN_API_KEY
 
 ---
 
