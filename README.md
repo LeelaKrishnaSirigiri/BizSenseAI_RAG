@@ -67,19 +67,67 @@ Groq LLaMA 3
 Grounded Answer / "I don't know"
    ↓
 Streamlit Chat Response
+
 ```
 
 ---
 
 # 4. Architecture
 
-## Components
-
-* Frontend: Streamlit UI
-* Backend: Python logic
-* Vector DB: ChromaDB
-* Embeddings: HuggingFace MiniLM
-* LLM: Groq (LLaMA 3)
+                ┌───────────────────────┐
+                │       User            │
+                │    (Employee)         │
+                └─────────┬─────────────┘
+                          │
+                          ▼
+                ┌───────────────────────┐
+                │   Streamlit UI        │
+                │ (Frontend Interface)  │
+                └─────────┬─────────────┘
+                          │
+                          ▼
+                ┌───────────────────────┐
+                │     FastAPI           │
+                │   (Backend API)       │
+                └─────────┬─────────────┘
+                          │
+                          ▼
+                ┌───────────────────────┐
+                │     LangGraph         │
+                │ (Workflow Control)    │
+                └─────────┬─────────────┘
+                          │
+          ┌───────────────┼────────────────┐
+          │               │                │
+          ▼               ▼                ▼
+┌────────────────┐ ┌────────────────┐ ┌────────────────┐
+│ Chat History   │ │ Uploaded Files │ │   ChromaDB     │
+│   (Memory)     │ │  (User Docs)   │ │ (Knowledge DB) │
+└──────┬─────────┘ └──────┬─────────┘ └──────┬─────────┘
+       │                  │                  │
+       └──────────────┬───┴───────────────┬──┘
+                      ▼                   ▼
+             ┌───────────────────────────────┐
+             │   Embedding Model             │
+             │ Sentence-Transformers         │
+             │ (all-MiniLM-L6-v2)            │
+             └──────────────┬────────────────┘
+                            │
+                            ▼
+             ┌───────────────────────────────┐
+             │     Groq LLaMA 3 (LLM)        │
+             │   (Answer Generation)         │
+             └──────────────┬────────────────┘
+                            │
+                            ▼
+             ┌───────────────────────────────┐
+             │   LangSmith (Observability)   │
+             └──────────────┬────────────────┘
+                            │
+                            ▼
+             ┌───────────────────────────────┐
+             │   Final Response to User      │
+             └───────────────────────────────┘
 
 ---
 
