@@ -30,6 +30,7 @@ BizSense AI solves this by building a Retrieval-Augmented Generation (RAG) syste
 * Generates accurate answers using LLM (Groq LLaMA 3)
 * Maintains conversation memory
 * Supports user file uploads
+* The system ensures grounded responses by restricting the LLM to retrieved context only.
 
 Result:
 
@@ -58,7 +59,8 @@ Embedding + Similarity Search
    ↓
 Relevant Context Retrieved
    ↓
-Strict Prompt Creation
+Prompt + Safety Control Layer
+   (strict rules: no hallucination)
    ↓
 Groq LLaMA 3
    ↓
@@ -126,13 +128,10 @@ BIZSENSEAI/
 
 * Answers only from internal documents
 
-## File Upload Support
-
-* TXT, PDF, DOCX supported
-* Creates temporary vector database
-
+## Hallucination Control
+* Strict prompt engineering ensures no answer is generated outside the knowledge base
+  
 ## Chat Memory
-
 * Remembers user inputs
 * Handles follow-up questions
 
@@ -218,13 +217,25 @@ streamlit run app.py
 
 # Conclusion
 
-BizSense AI is a secure enterprise assistant that:
+BizSense AI is a secure and intelligent enterprise assistant that:
 
-* Eliminates hallucination
-* Improves knowledge access
-* Enhances productivity
-* Provides intelligent document understanding
+* Eliminates hallucination using strict RAG architecture
+* Provides accurate, context-driven answers
+* Reduces time spent searching internal data
+* Enhances organizational productivity
 
+It demonstrates how AI can be safely deployed in enterprise environments with controlled knowledge access.
 ---
 
 “From scattered data to smart answers.”
+
+---
+
+# 🔗 Live Demo
+
+You can access the deployed application here:
+
+👉 https://huggingface.co/spaces/leelakrishna1133/BizSenseAI_RAG)
+
+---
+
