@@ -218,13 +218,6 @@ streamlit run app.py
 
 ---
 
-# 11. System Constraints
-
-* No external knowledge usage
-* Strict RAG-based answers
-* If not found, the system responds with: "I don't know"
-
----
 
 # 12. Future Improvements
 
