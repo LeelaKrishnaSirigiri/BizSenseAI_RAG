@@ -180,6 +180,7 @@ BIZSENSEAI/
 ```bash
 pip install -r requirements.txt
 python create_db.py
+uvicorn backend.main:app --reload
 streamlit run app.py
 ```
 
