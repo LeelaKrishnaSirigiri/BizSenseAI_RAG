@@ -70,10 +70,11 @@ Streamlit Chat Response
 
 ```
 
----
 
-# 4. Architecture
 
+## Architecture
+
+```text
                 ┌───────────────────────┐
                 │       User            │
                 │    (Employee)         │
@@ -97,39 +98,19 @@ Streamlit Chat Response
                 │ (Workflow Control)    │
                 └─────────┬─────────────┘
                           │
-          ┌───────────────┼────────────────┐
-          │               │                │
-          ▼               ▼                ▼
-┌────────────────┐ ┌────────────────┐ ┌────────────────┐
-│ Chat History   │ │ Uploaded Files │ │   ChromaDB     │
-│   (Memory)     │ │  (User Docs)   │ │ (Knowledge DB) │
-└──────┬─────────┘ └──────┬─────────┘ └──────┬─────────┘
-       │                  │                  │
-       └──────────────┬───┴───────────────┬──┘
-                      ▼                   ▼
-             ┌───────────────────────────────┐
-             │   Embedding Model             │
-             │ Sentence-Transformers         │
-             │ (all-MiniLM-L6-v2)            │
-             └──────────────┬────────────────┘
-                            │
-                            ▼
-             ┌───────────────────────────────┐
-             │     Groq LLaMA 3 (LLM)        │
-             │   (Answer Generation)         │
-             └──────────────┬────────────────┘
-                            │
-                            ▼
-             ┌───────────────────────────────┐
-             │   LangSmith (Observability)   │
-             └──────────────┬────────────────┘
-                            │
-                            ▼
-             ┌───────────────────────────────┐
-             │   Final Response to User      │
-             └───────────────────────────────┘
-
----
+                          ▼
+                Retrieval Layer
+      (Chat History, Uploads, ChromaDB)
+                          │
+                          ▼
+                Embedding Model (MiniLM)
+                          │
+                          ▼
+                Groq LLaMA 3 (LLM)
+                          │
+                          ▼
+                Final Response
+```
 
 # 5. Project Structure
 
