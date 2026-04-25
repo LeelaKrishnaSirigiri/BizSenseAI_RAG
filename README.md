@@ -163,12 +163,12 @@ BIZSENSEAI/
 
 ## 6. Key Features
 
-### Knowledge-Based Answering
-### Hallucination Control
-### Chat Memory
-### Multi-Source Retrieval
-### Observability
-### User-Friendly Features
+* Knowledge-Based Answering
+* Hallucination Control
+* Chat Memory
+* Multi-Source Retrieval
+* Observability
+* User-Friendly Features
 
 
 # 7. Example Use Cases
