@@ -246,7 +246,7 @@ BizSense AI is a secure and intelligent enterprise assistant that:
 
 You can access the deployed application here:
 
-👉 https://huggingface.co/spaces/leelakrishna1133/BizSenseAI_RAG)
+👉 https://huggingface.co/spaces/leelakrishna1133/BizSenseAI_RAG
 
 ---
 
